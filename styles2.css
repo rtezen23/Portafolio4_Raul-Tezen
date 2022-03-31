@@ -1,0 +1,208 @@
+
+/*hecho a partir de una resolución de 1200px*/
+@media screen and (min-width: 600px){
+
+    .general{
+        
+        border: 3px solid blue;
+    }
+    
+    nav{
+
+    }
+  
+    nav>label>img{
+        display: none;
+    }
+
+    nav>ul{
+        flex-direction: row;
+        position: relative;
+        justify-content: right;
+        right: 0;
+        top: 0;
+        transition: none;
+    }
+
+    .actual{
+        color: #34B0BE;
+    }
+
+    /*---- HOME INFO ----*/
+
+    .home-info{
+        font-size: 2rem;
+    }
+    /* TEXTO DE LA IZQUIERDA */
+    .home-info__1{
+        width: 20%;
+    }
+
+    .home-info__1>h1{
+        font-size: 5rem;
+    }
+
+    .home-info__1>h1>span{
+        font-size: 3rem;
+    }
+    
+    .home-info__1>div{
+        width: 70%;
+        height: 3px;
+        background-color: #d1ceca;
+        position: relative;
+        top: -5.5rem;
+    }
+    /* TEXTO DE LA DERECHA Y LOGOS*/
+    
+    .home-info__2>p{ /* alinear los p con los logos */
+        margin-left: 0;
+    }
+
+    /* LOGOS */
+    .home-info__2{
+        
+    }
+
+    .home-info__2__logos{
+        display: flex;
+        margin-top: 1rem;
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+
+    /* IMG */
+    .home-info__img{
+        width: 30rem;
+        height: 30rem;
+    }
+
+    .home-empresas{
+        width: 80%;
+        padding: 30px 60px;
+        border-radius: 10px;
+        margin-top: 10rem;
+    }
+
+    .home-empresas>div{
+        width: 25%;
+        height: 7rem;
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+
+
+    /* SOBRE MI */
+
+    h2{ 
+        font-size: 3rem;
+    }
+
+    #aboutMe>p{
+        width: 60%;
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+
+    /* SERVICIOS */
+
+    .servicios{
+        transition: none;
+        justify-content: space-around;
+        left: 0;
+    }
+
+    .servicios-container{
+        margin: 2rem;
+        width: 25%;
+    }
+
+    .servicios-container__img>img:first-child{
+        width: 100%;
+    }
+
+    .servicios-container>h3{
+        font-size: 1.5rem;
+        margin: 1rem auto;
+    }
+
+    .servicios-container>p{
+        font-size: 1rem;
+        line-height: 1.5rem;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+
+    input[name="servicio"]{
+        display: none;
+    }
+
+    
+
+    /* HABILIDADES */
+
+    .habilidades{
+        width: 80%;
+        padding: 1rem;
+    }
+
+    .habilidades .barraProgreso{
+        height: 1rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .habilidades .barraProgreso p{
+        font-size: 1.5rem;
+    }
+
+    /* PORTAFOLIO */
+
+    input[id="third"]{
+        display: none;
+    }
+
+    input#first:checked ~ .portafolio{
+        right: 1.5vw;
+    }
+    input#second:checked ~ .portafolio{
+        right: 50.5vw;
+    }
+
+
+    /*CONTACTO*/
+    .contacto{
+        width: 60%;
+        margin: auto;
+    }
+
+    .contacto-container{
+        font-size: 1.5rem;
+        border-radius: 10px;
+        padding: 5px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .contacto-container>:nth-child(2){ 
+        font-size: 1.5rem;
+    }
+
+    .contacto-container>:nth-child(3){ /* segundo p */
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+
+}   
+/*Resoluciones más altas (falta)*/
+@media screen and (min-width: 1500px){
+    input#first:checked ~ .portafolio{
+        right: 0vw;
+    }
+    input#second:checked ~ .portafolio{
+        right: 20vw;
+    }
+}
