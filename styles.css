@@ -31,11 +31,13 @@ input#menu{
 
 nav{
     display: flex;
-    position: sticky;
     height: 55px;
     justify-content: flex-end;
     padding: .5rem 1.25rem;
     z-index: 100;
+    max-width: 1500px;
+    margin: auto;
+
 }
 
 nav>ul{
@@ -62,6 +64,10 @@ nav>ul>li>a{
     color: #fff;
     font-size: 20px;
     font-weight: bold;
+}
+
+nav>label>img{
+    cursor: pointer;
 }
 
 input#menu:checked ~ ul{

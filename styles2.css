@@ -188,12 +188,18 @@
 
 
 }   
-/*Resoluciones más altas (falta)*/
+/* Otras resoluciones (completar)*/
 @media screen and (min-width: 1500px){
     input#first:checked ~ .portafolio{
         right: 0vw;
     }
     input#second:checked ~ .portafolio{
         right: 20vw;
+    }
+}
+
+@media screen and (max-width: 924px) and (min-width: 795px){
+    nav>ul>li>a{
+        font-size: 1rem;
     }
 }
