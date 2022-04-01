@@ -72,7 +72,7 @@ input#menu:checked ~ ul{
 
 .home-info{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     color: #fff;
     font-size: 25px;
 }
@@ -94,6 +94,15 @@ input#menu:checked ~ ul{
     color: #fff;
 }
 
+/* HOME INFO 2 */
+
+.home-info__2{
+    width: 30%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .home-info__2>p:first-child{
     color: #34B0BE;
@@ -105,10 +114,7 @@ input#menu:checked ~ ul{
 }
 
 /* LOGOS */
-.home-info__2{
-    width: 30%;
-    z-index: 1;
-}
+
 
 .home-info__2__logos{
     display: flex;
