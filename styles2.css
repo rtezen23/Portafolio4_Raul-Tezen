@@ -1,16 +1,7 @@
 
 /*hecho a partir de una resolución de 1200px*/
-@media screen and (min-width: 600px){
+@media screen and (min-width: 800px){
 
-    .general{
-        
-        border: 3px solid blue;
-    }
-    
-    nav{
-
-    }
-  
     nav>label>img{
         display: none;
     }
